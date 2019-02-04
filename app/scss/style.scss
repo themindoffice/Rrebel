@@ -1,0 +1,42 @@
+/* CORE SCSS ----------------------------------- */
+
+@import "_vars";
+@import "_mixins";
+@import "_reset";
+@import "_fonts";
+@import "_grid";
+@import "_components";
+@import "_ui";
+@import "_content";
+@import "_global";
+@import "_custom";
+@import "_plugins";
+
+/* MAIN ----------------------------------------- */
+
+html,
+body {
+	background-color: transparent;
+	color: $grey-3;
+	font-family: $font-1;
+	line-height: 150%;
+	@include responsiveText(17px, .08);
+}
+
+section {
+	position: relative;
+}
+
+main {
+	section {
+		padding: $section-padding 0;
+	}
+}
+
+#page {
+	background-color: #fff;
+	min-width: 320px;
+	position: relative;
+	@include transition(transform, ease, 300ms);
+	z-index: 20;
+}

@@ -1,0 +1,236 @@
+/* BUTTONS -------------------------------------- */
+
+.buttons {
+	font-size: 0;
+	margin: 0 -6px;
+
+	> * {
+		display: inline-block;
+		margin: 2px 6px;
+		vertical-align: top;
+	}
+}
+.content .button,
+.button {
+	a {
+		background-color: $color-1;
+		color: #fff;
+		display: inline-block;
+		font-family: $font-1;
+		@include responsiveText(17px, .08);
+		font-weight: 600;
+		line-height: 120%;
+		padding: 16px 30px;
+		text-decoration: none;
+		text-transform: uppercase;
+		@include transition;
+
+		@include hover {
+			background-color: darken($color-1, 15%);
+		}
+	}
+
+	&.small {
+		a {
+			padding: 10px 20px;
+		}
+	}
+
+	&.alt {
+		a {
+			background-color: $color-2;
+
+			@include hover {
+				background-color: lighten($color-2, 15%);
+			}
+		}
+	}
+}
+
+/* CARDS -------------------------------------- */
+
+.cards {
+	background-color: $grey-1;
+}
+
+.card {
+	@include flex(row, nowrap);
+
+	.card-inner {
+		background-color: #fff;
+		@include box-shadow(0 4px 8px 0 rgba(#000, .05));
+		@include flex(column);
+		padding-bottom: 12px;
+		position: relative;
+		width: 100%;
+
+		&:before {
+			background-color: $color-1;
+			content: '';
+			height: 12px;
+			@include position(absolute, auto,50%,0,50%);
+			z-index: 20;
+		}
+
+		.card-header {
+			background: #fff;
+			@include flex-grow(1);
+			padding: 10px 30px 30px;
+			width: 100%;
+
+			span {
+				color: #000;
+				font-family: $font-2;
+				@include responsiveText(17px, .08);
+				font-weight: 600;
+				line-height: 140%;
+				letter-spacing: 2px;
+				text-transform: uppercase;
+			}
+		}
+
+		.card-image {
+			padding: 100% 0 0;
+			position: relative;
+			width: 100%;
+
+			span {
+				@include flex(row, nowrap, center, center);
+				@include position(absolute, 20px,20px,20px,20px);
+
+				img {
+					display: block;
+					height: auto;
+					max-height: 90%;
+					max-width: 90%;
+					width: auto;
+				}
+			}
+		}
+
+		.card-content {
+			width: 100%;
+		}
+
+		.card-button {
+			width: 100%;
+		}
+	}
+}
+
+/* FORMS -------------------------------------- */
+
+.form {
+	.form-feedback {
+		font-size: 16px;
+		font-style: italic;
+		font-weight: 600;
+		margin-bottom: 15px;
+
+		&.error {
+			color: $color-error;
+		}
+		&.success {
+			color: $color-success;
+		}
+	}
+
+	.form-row {
+		&:not(:last-child) {
+			margin-bottom: 10px;
+		}
+
+		.form-field {
+			position: relative;
+
+			&.required:before {
+				color: $grey-2;
+				content: '*';
+				height: 12px;
+				line-height: 12px;
+				margin-top: -6px;
+				@include position(absolute, 50%, none, none, -20px);
+				vertical-align: middle;
+			}
+		}
+	} 
+
+	input[type=text],
+	input[type=password],
+	input[type=number],
+	input[type=email],
+	textarea {
+		color: $grey-4;
+		line-height: normal;
+		text-align: left;
+
+		&::-webkit-input-placeholder {
+			color: $grey-2;
+		}
+		&::-moz-placeholder {
+			color: $grey-2;
+		}
+		&:-ms-input-placeholder {
+			color: $grey-2;
+		}
+		&:-moz-placeholder {
+			color: $grey-2;
+		}
+	}
+
+	input[type=text],
+	input[type=password],
+	input[type=number],
+	input[type=email] {
+		@include appearance(none);
+		background-color: #fff;
+		border: 2px solid $grey-2;
+		@include box-sizing;
+		font-family: $font-1;
+		font-weight: 400;
+		height: 50px;
+		padding: 0 20px;
+		@include responsiveText(16px, .06);
+		width: 100%; 
+	}
+
+	select {
+		@include appearance(none);
+		background-color: #fff;
+		border: 2px solid $grey-2;
+		@include box-sizing;
+		color: $grey-2;
+		font-family: $font-1;
+		font-weight: 400;
+		height: 50px;
+		line-height: normal;
+		padding: 0 20px;
+		@include responsiveText(16px, .06);
+		width: 100%;
+
+		& + .icon {
+			border-top: 6px solid #000;
+			border-left: 6px solid transparent;
+			border-right: 6px solid transparent;
+			height: 0;
+			margin-top: -3px;
+			pointer-events: none;
+			@include position(absolute, 50%, 20px, none, none);
+			width: 0;
+		}
+	}
+
+	textarea {
+		@include appearance(none);
+		background-color: #fff;
+		border: 2px solid $grey-2;
+		@include box-sizing;
+		font-family: $font-1;
+		font-weight: 400;
+		height: 150px;
+		line-height: normal;
+		padding: 20px;
+		@include responsiveText(16px, .06);
+		width: 100%;
+	}
+}

@@ -1,0 +1,255 @@
+/* ACCORDION --------------------------------- */
+
+.accordion {
+	.accordion-item {
+		overflow: hidden;
+
+		&:not(:last-child) {
+			margin-bottom: 10px;
+		}
+
+		&.open {
+			.accordion-handler {
+				background-color: darken($color-1, 10%);
+
+				.arrow {
+					@include transform(rotate(180deg));
+				}
+			}
+		}
+
+		.accordion-handler {
+			background-color: $color-1;
+			@include border-radius($ui-radius);
+			color: #fff;
+			display: block;
+			font-family: $font-1;
+			font-size: 21px;
+			font-weight: 600;
+			padding: 12px 40px 12px 20px;
+			position: relative;
+			text-decoration: none;
+			text-align: left;
+			@include transition(background-color, ease, 300ms);
+
+			@include hover {
+				background-color: darken($color-1, 10%);
+			}
+
+			.arrow {
+				height: 20px;
+				@include position(absolute, 14px, 12px, none, none);
+				right: 12px;
+				top: 14px;
+				@include transition(all, ease, 300ms);
+				width: 20px;
+
+				&:before,
+				&:after {
+					background-color: #fff;
+					@include border-radius(2px);
+					content: '';
+					@include position(absolute, 3px, none, none, none);
+					height: 14px;
+					width: 4px;
+				}
+				&:before {
+					@include transform(rotate(-45deg));
+					left: 4px;
+				}
+				&:after {
+					@include transform(rotate(45deg));
+					right: 4px;
+				}
+			}
+		}
+
+		.accordion-content {
+			display: none;
+			text-align: left;
+
+			.accordion-content-inner {
+				padding: 20px;
+			}
+		}
+	}
+}
+
+/* TABS -------------------------------------- */
+
+.tabs {
+	.handlers {
+		@include flex(row, wrap, center);
+		padding-bottom: 20px;
+
+		a {
+			background-color: transparent;
+			border: 2px solid $color-1;
+			color: $color-1;
+			display: block;
+			font-family: $font-2;
+			font-size: 20px;
+			font-weight: 400;
+			letter-spacing: 3px;
+			margin: 0 10px 20px;
+			padding: 8px 12px;
+			text-decoration: none;
+			text-transform: uppercase;
+			@include transition;
+
+			&.active {
+				background-color: $color-1;
+				color: #fff;
+			}
+		}
+	}
+
+	.contents {
+		> div {
+			display: none;
+
+			&.active {
+				display: block;
+			}
+		}
+	}
+}
+
+/* PARALLAX --------------------------------- */
+
+[data-parallax] {
+	overflow: hidden;
+	position: relative;
+	
+	> .parallax {
+		@include position(absolute, 0, 0, 0, 0);
+		
+		> img {
+			max-height: none;
+			max-width: none;
+			@include position(absolute, 50%, none, none, 50%);
+			@include transform(translate(-50%, -50%));
+			width: 101%;
+		}
+	}
+}
+
+/* FULL SCREEN VIDEO ------------------------------- */
+
+.fs-video {
+	@include opacity(0);
+	overflow: hidden;
+	@include position(absolute, -5px, -5px, -5px, -5px);
+	@include transition(all, ease, 800ms);
+	visibility: hidden;
+	z-index: 10;
+
+	&.loaded {
+		@include opacity(1);
+		visibility: visible;
+	}
+
+	video {
+		display: block;
+		height: auto;
+		position: relative;
+	}
+	.yt-wrapper {
+		overflow: hidden;
+		@include position(absolute, 0, 0, 0, 0);
+	}
+	.yt-ref,
+	.yt-holder {
+		display: block;
+		overflow: hidden;
+		padding-top: 56.20608899297424%;
+		position: absolute;
+		width: 100%;
+	}
+	.yt-holder {
+		iframe {
+			height: 100%;
+			@include position(absolute, 0, none, none, 0);
+			width: 100%;
+		}
+	}
+}
+
+/* NAV SLIDER ------------------------------------ */
+
+.nav-slider {
+	position: relative;
+
+	.nav-slider-bar {
+		height: 3px;
+		pointer-events: none;
+		@include position(absolute, 100%, 0, none, 0);
+
+		span {
+			background-color: $grey-2;
+			@include position(absolute, 0, none, 0, none);
+			@include transition(all, ease, 300ms);
+
+			&.onactive {
+				background-color: $color-1;
+			}
+		}
+	}
+}
+
+/* TRANSITIONS --------------------------------- */
+
+[data-transition] {
+	opacity: 0;
+	-webkit-opacity: 0;
+}
+.transition-init[data-transition="slide-left"] {
+	transform: translateX(-200px);
+	-webkit-transform: translateX(-200px);
+}
+.transition-init[data-transition="slide-right"] {
+	transform: translateX(200px);
+	-webkit-transform: translateX(200px);
+}	
+.transition-init[data-transition="slide-top"] {
+	transform: translateY(-200px);
+	-webkit-transform: translateY(-200px);
+}
+.transition-init[data-transition="slide-bottom"] {
+	transform: translateY(200px);
+	-webkit-transform: translateY(200px);
+}
+.transition-init[data-transition="zoom-in"] {
+	transform: scale(0);
+	-webkit-transform: scale(0);
+}
+.transition-init[data-transition="zoom-out"] {
+	transform: scale(2);
+	-webkit-transform: scale(2);
+}
+.transition-start[data-transition] {
+	opacity: 1;
+	-webkit-opacity: 1;
+}
+.transition-start[data-transition="fade-in"] {
+	transition-duration: 2s;
+	transition-property: opacity;
+}
+.transition-start[data-transition="slide-left"],
+.transition-start[data-transition="slide-right"],
+.transition-start[data-transition="slide-top"],
+.transition-start[data-transition="slide-bottom"],
+.transition-start[data-transition="zoom-in"],
+.transition-start[data-transition="zoom-out"] {
+	transition-duration: 1s;
+	transition-property: opacity, transform;
+}
+.transition-start[data-transition="slide-left"],
+.transition-start[data-transition="slide-right"],
+.transition-start[data-transition="slide-top"],
+.transition-start[data-transition="slide-bottom"],
+.transition-start[data-transition="zoom-in"],
+.transition-start[data-transition="zoom-out"] {
+	transform: none;
+	-webkit-transform: none;
+}

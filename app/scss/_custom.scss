@@ -1,0 +1,18 @@
+section.intro {
+	.container {
+		z-index: 20;
+	}
+}
+
+section.fluid-split {
+	&.alt {
+		background-color: $grey-1;
+	}
+	.container {
+		z-index: 20;
+
+		.image {
+			width: 100%;
+		}
+	}
+}

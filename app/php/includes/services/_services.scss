@@ -1,0 +1,27 @@
+section.services {
+	background-color: #000;
+
+	.content {
+		color: #fff;
+		margin-bottom: $text-margin;
+	}
+
+	.card {
+		a.card-inner {
+			color: #000;
+			position: relative;
+			text-decoration: none;
+
+			&:before {
+				@include transition;
+			}
+
+			@include hover {
+				&:before {
+					left: 0;
+					right: 0;
+				}
+			}
+		}
+	}
+}

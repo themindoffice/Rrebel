@@ -1,0 +1,237 @@
+.cover {
+	@include background('', cover, center, no-repeat);
+
+
+	&:before {
+		content: '';
+		display: block;
+		padding-top: 60%;
+	}
+}
+
+.ta-xs-left {
+	text-align: left;
+
+	hr {
+		margin-left: 0;
+		margin-right: auto;
+	}
+}
+.ta-xs-right {
+	text-align: right;
+
+	ul,
+	ol,
+	table,
+	hr {
+		margin-left: auto;
+		margin-right: 0;
+	}
+}
+.ta-xs-center {
+	text-align: center;
+
+	ul,
+	ol,
+	table,
+	hr {
+		margin-left: auto;
+		margin-right: auto;
+	}
+}
+.ta-xs-justify {
+	text-align: justify;
+
+	ul,
+	ol,
+	table,
+	hr {
+		margin-left: 0;
+		margin-right: auto;
+	}
+}
+
+@include small {
+	.ta-sm-left {
+		text-align: left;
+
+		ul,
+		ol,
+		table,
+		hr {
+			margin-left: 0;
+			margin-right: auto;
+		}
+	}
+	.ta-sm-right {
+		text-align: right;
+
+		ul,
+		ol,
+		table,
+		hr {
+			margin-left: auto;
+			margin-right: 0;
+		}
+	}
+	.ta-sm-center {
+		text-align: center;
+
+		ul,
+		ol,
+		table,
+		hr {
+			margin-left: auto;
+			margin-right: auto;
+		}
+	}
+	.ta-sm-justify {
+		text-align: justify;
+
+		ul,
+		ol,
+		table,
+		hr {
+			margin-left: 0;
+			margin-right: auto;
+		}
+	}
+}
+@include medium {
+	.ta-md-left {
+		text-align: left;
+
+		ul,
+		ol,
+		table,
+		hr {
+			margin-left: 0;
+			margin-right: auto;
+		}
+	}
+	.ta-md-right {
+		text-align: right;
+
+		ul,
+		ol,
+		table,
+		hr {
+			margin-left: auto;
+			margin-right: 0;
+		}
+	}
+	.ta-md-center {
+		text-align: center;
+
+		ul,
+		ol,
+		table,
+		hr {
+			margin-left: auto;
+			margin-right: auto;
+		}
+	}
+	.ta-md-justify {
+		text-align: justify;
+
+		ul,
+		ol,
+		table,
+		hr {
+			margin-left: 0;
+			margin-right: auto;
+		}
+	}
+}
+@include large {
+	.ta-lg-left {
+		text-align: left;
+
+		ul,
+		ol,
+		table,
+		hr {
+			margin-left: 0;
+			margin-right: auto;
+		}
+	}
+	.ta-lg-right {
+		text-align: right;
+
+		ul,
+		ol,
+		table,
+		hr {
+			margin-left: auto;
+			margin-right: 0;
+		}
+	}
+	.ta-lg-center {
+		text-align: center;
+
+		ul,
+		ol,
+		table,
+		hr {
+			margin-left: auto;
+			margin-right: auto;
+		}
+	}
+	.ta-lg-justify {
+		text-align: justify;
+
+		ul,
+		ol,
+		table,
+		hr {
+			margin-left: 0;
+			margin-right: auto;
+		}
+	}
+}
+@include extralarge {
+	.ta-xl-left {
+		text-align: left;
+
+		ul,
+		ol,
+		table,
+		hr {
+			margin-left: 0;
+			margin-right: auto;
+		}
+	}
+	.ta-xl-right {
+		text-align: right;
+
+		ul,
+		ol,
+		table,
+		hr {
+			margin-left: auto;
+			margin-right: 0;
+		}
+	}
+	.ta-xl-center {
+		text-align: center;
+
+		ul,
+		ol,
+		table,
+		hr {
+			margin-left: auto;
+			margin-right: auto;
+		}
+	}
+	.ta-xl-justify {
+		text-align: justify;
+
+		ul,
+		ol,
+		table,
+		hr {
+			margin-left: 0;
+			margin-right: auto;
+		}
+	}
+}

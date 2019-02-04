@@ -1,0 +1,187 @@
+@mixin align-items($alignment: stretch) {
+	align-items: $alignment;
+	-webkit-align-items: $alignment;
+}
+
+@mixin appearance($value: none) {
+	-webkit-appearance: $value;
+	-moz-appearance: $value;
+	-ms-appearance: $value;
+	-o-appearance: $value;
+	appearance: $value;
+}
+
+@mixin background($url, $size, $position, $repeat) {
+	@if $url != '' {
+		background-image: url($url);
+	}
+	background-position: $position;
+	background-repeat: $repeat;
+	background-size: $size;
+	-webkit-background-size: $size;
+}
+
+@mixin background-size($size: cover) {
+	background-size: $size;
+	-webkit-background-size: $size;
+}
+
+@mixin border-radius($radius: $ui-radius) {
+	border-radius: $radius;
+	-webkit-border-radius: $radius;
+}
+
+@mixin box-shadow($properties: 0 2px 10px 0 #000) {
+	box-shadow: $properties;
+	-webkit-box-shadow: $properties;
+}
+
+@mixin box-sizing($sizing: border-box) {
+	box-sizing: $sizing;
+	-webkit-box-sizing: $sizing;
+}
+
+@mixin clip-path($properties) {
+    clip-path: $properties;
+    -webkit-clip-path: $properties;
+}
+
+@mixin display-flex {
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+}
+
+@mixin flex($direction: row, $wrap: wrap, $align: flex-start, $valign: stretch, $content: stretch) {
+	align-content: $content;
+	-webkit-align-content: $content;
+	align-items: $valign;
+	-webkit-align-items: $valign;
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+	 flex-wrap: $wrap;
+	-webkit-flex-wrap: $wrap;
+	flex-direction: $direction;
+	-webkit-flex-direction: $direction;
+	justify-content: $align; 
+	-webkit-justify-content: $align;
+}
+
+@mixin flex-direction($direction: row) {
+	flex-direction: $direction;
+	-webkit-flex-direction: $direction;
+}
+
+@mixin flex-wrap($wrap: wrap) {
+	flex-wrap: $wrap;
+	-webkit-flex-wrap: $wrap;
+}
+  
+@mixin flex-grow($amount: 0) {
+	flex-grow: $amount;
+	-webkit-flex-grow: $amount;
+}
+
+@mixin justify-content($alignment: flex-start) {
+	justify-content: $alignment; 
+	-webkit-justify-content: $alignment;
+}
+
+@mixin opacity($amount: 1) {
+	opacity: $amount;
+	-webkit-opacity: $amount;
+}
+
+@mixin position($type: absolute, $top: 0, $right: 0, $bottom: 0, $left: 0) {
+	@if $type != none {
+		position: $type;
+	}
+	@if $top != none {
+		top: $top;
+	}
+	@if $right != none {
+		right: $right;
+	}
+	@if $bottom != none {
+		bottom: $bottom;
+	}
+	@if $left != none {
+		left: $left;
+	}
+}
+
+@mixin transition($property: all, $easing: ease, $duration: 250ms) {
+	transition: $property $easing $duration;
+	-webkit-transition: $property $easing $duration;
+}
+
+@mixin transform($properties) {
+	transform: $properties;
+	-webkit-transform: $properties;
+}
+
+@mixin user-select($property) {
+	user-select: $property;
+	-webkit-user-select: $property;
+	-moz-user-select: $property;
+	-ms-user-select: $property;
+}
+
+/* Media Queries (mobile first) ----------------------------------- */
+
+@mixin small {
+	@media only screen and (min-width: #{$viewport-sm}) {
+		@content;
+	}
+}
+@mixin medium {
+	@media only screen and (min-width: #{$viewport-md}) {
+		@content;
+	}
+}
+@mixin large {
+	@media only screen and (min-width: #{$viewport-lg}) {
+		@content;
+	}
+}
+@mixin extralarge {
+	@media only screen and (min-width: #{$viewport-xl}) {
+		@content;
+	}
+}
+
+/* Hover functionality (disabled on mobile) ----------------------- */
+
+@mixin hover {
+	@media only screen and (min-width: #{$viewport-md}) {
+		&:hover {
+			@content;
+		}
+	}
+}
+
+/* Responsive Text ----------------------- */
+
+@mixin responsiveText($size: 17px, $factor: .1) {
+	$desktop: $size;
+	$tabletLandscape: $desktop * (1 - $factor);
+	$tabletPortrait: $tabletLandscape * (1 - $factor);
+	$mobile: $tabletPortrait * (1 - $factor);
+
+	font-size: $mobile;
+
+	@media only screen and (min-width: #{$viewport-md}) {
+		font-size: $tabletPortrait;
+	}
+	@media only screen and (min-width: #{$viewport-lg}) {
+		font-size: $tabletLandscape;
+	}
+	@media only screen and (min-width: #{$viewport-xl}) {
+		font-size: $desktop;
+	}
+}

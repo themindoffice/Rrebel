@@ -1,0 +1,53 @@
+section.banner-1 {
+	.container:first-child {
+		z-index: 20;
+
+		.row {
+			min-height: 350px;
+		}
+	}
+	.container:last-child {
+		left: 0;
+		position: absolute;
+		top: 0;
+		height: 100%;
+		z-index: 10;
+
+		.row {
+			height: 100%;
+		}
+	}
+	.background {
+		background-color: #000;
+	}
+	.box {
+		padding-right: $gutter;
+		width: 100%;
+
+		.title {
+			color: #fff;
+			font-family: $font-2;
+			font-weight: normal;
+			letter-spacing: 4px;
+			line-height: 105%;
+			@include responsiveText(40px, .14);
+		}
+
+		.subtitle {
+			color: #fff;
+			font-family: $font-1;
+			font-weight: normal;
+			line-height: 120%;
+			margin-bottom: $text-margin;
+			@include responsiveText(25px, .14);
+		}
+
+		.text {
+			color: #fff;
+			font-family: $font-1;
+			@include responsiveText(17px, .08);
+			font-weight: normal;
+			line-height: 160%;
+		}
+	}
+}

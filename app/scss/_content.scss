@@ -1,0 +1,221 @@
+.section-header {
+	h1 {
+		font-family: $font-2;
+		line-height:105%;
+		@include responsiveText(40px, .15);
+	}
+	h2 {
+		font-family: $font-2;
+		line-height:105%;
+		@include responsiveText(40px, .15);
+	}
+	h3 {
+		font-family: $font-2;
+		line-height:105%;
+		@include responsiveText(30px, .15);
+	}
+	h4 {
+		font-family: $font-2;
+		line-height:105%;
+		@include responsiveText(20px, .1);
+	}
+	h5 {
+		font-family: $font-2;
+		@include responsiveText(17px, .08);
+	}
+	h6 {
+		font-family: $font-2;
+		@include responsiveText(17px, .08);
+	}
+	h1,
+	h2,
+	h3,
+	h4,
+	h5,
+	h6 {
+		color: $color-1;
+		font-weight: 400;
+		letter-spacing: 2px;
+		text-transform: uppercase;
+	}
+	&.alt {
+		h1,
+		h2,
+		h3,
+		h4,
+		h5,
+		h6 {
+			color: $color-2;
+		}
+	}
+
+	hr {
+		border: 0;
+		border-bottom: 4px solid darken($grey-1, 8%);
+		display: block;
+		height: 0;
+		margin: 0;
+		width: 100px;
+		padding: 0;
+	}
+
+	h1,
+	h2,
+	h3,
+	h4,
+	p,
+	ul,
+	ol,
+	table,
+	hr {
+		&:not(:last-child) {
+			margin-bottom: $text-margin;
+		}
+	}
+}
+
+.content {
+	h1 {
+		font-family: $font-2;
+		line-height:105%;
+		@include responsiveText(35px, .15);
+	}
+	h2 {
+		font-family: $font-2;
+		line-height:105%;
+		@include responsiveText(30px, .15);
+	}
+	h3 {
+		font-family: $font-2;
+		line-height:105%;
+		@include responsiveText(25px, .1);
+	}
+	h4 {
+		font-family: $font-2;
+		line-height:105%;
+		@include responsiveText(20px, .1);
+	}
+	h5 {
+		font-family: $font-2;
+		line-height:105%;
+		@include responsiveText(18px, .08);
+	}
+	h6 {
+		font-family: $font-2;
+		line-height:105%;
+		@include responsiveText(17px, .08);
+	}
+
+	h1,
+	h2,
+	h3,
+	h4,
+	h5,
+	h6 {
+		color: $color-1;
+		font-weight: 400;
+		letter-spacing: 2px;
+		text-transform: uppercase;
+	}
+	&.alt {
+		h1,
+		h2,
+		h3,
+		h4,
+		h5,
+		h6 {
+			color: $color-2;
+		}
+	}
+
+	a {
+		color: $color-1;
+		text-decoration: underline;
+	}
+
+	ul {
+		display: table;
+		list-style: none;
+
+		li {
+			display: block;
+			padding-left: 16px;
+			position: relative;
+
+			&:before {
+				background-color: $grey-3;
+				@include border-radius(50%);
+				content: '';
+				height: 6px;
+				@include position(absolute, 10px, none, none, 0);
+				width: 6px;
+			}
+		}
+	}
+
+	ol {
+		display: table;
+		padding-left: 19px;
+	}
+
+	table {
+		tr {
+			th,
+			td {
+				padding: 4px 8px;
+
+				&:first-child {
+					padding-left: 0;
+				}
+				&:last-child {
+					padding-right: 0;
+				}
+			}
+			th {
+				border-bottom: 1px solid $grey-2;
+				font-weight: bold;
+				font-size: 18px;
+			}
+		}
+	}
+
+	hr {
+		border: 0;
+		border-bottom: 4px solid $grey-1;
+		display: block;
+		height: 0;
+		margin: 0;
+		margin-bottom: $text-margin;
+		width: 100px;
+		padding: 0;
+	}
+
+	h1,
+	h2,
+	h3,
+	h4,
+	h5,
+	h6,
+	p,
+	ul,
+	ol,
+	table,
+	hr {
+		&:not(:last-child) {
+			margin-bottom: $text-margin;
+		}
+	}
+
+	&.light {
+		color: #fff;
+
+		h1,
+		h2,
+		h3,
+		h4,
+		h5,
+		h6, {
+			color: #fff;
+		}
+	}
+}

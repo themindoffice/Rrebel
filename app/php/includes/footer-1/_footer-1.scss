@@ -1,0 +1,102 @@
+footer.footer-1 {
+	background-color: #000;
+
+	.footer-main {
+		color: #fff;
+		@include responsiveText(16px, .06);
+		line-height: 180%;
+		padding: 50px 0;
+
+		.title {
+			color: $color-1;
+			display: block;
+			font-family: $font-2;
+			@include responsiveText(24px, .1);
+			font-weight: normal;
+			letter-spacing: 4px;
+			line-height:110%;
+			text-transform: uppercase;
+		}
+		hr {
+			border: 0;
+			border-bottom: 4px solid darken($grey-1, 8%);
+			display:block;
+			height: 0;
+			margin: 0 0 29px;
+			width: 100px;
+			padding: 0;
+		}
+		p:not(:last-child) {
+			margin-bottom: 20px;
+		}
+		a {
+			color: #fff;
+			text-decoration: none;
+
+			@include hover {
+				text-decoration: underline;
+			}
+		}
+		ul {
+			display: inline-block;
+			list-style: none;
+			vertical-align: top;
+
+			li {
+				padding-left: 24px;
+				position: relative;
+
+				&:before {
+					color: $color-1;
+					content: '►';
+					font-size: 12px;
+					@include position(absolute, 0, none, none, 0);
+					vertical-align: middle;
+				}
+			}
+		}
+		.footer-logo {
+			a {
+				@include transition;
+
+				@include hover {
+					@include opacity(.5);
+				}
+			}
+
+			img {
+				width: 200px;
+			}
+		}
+	}
+
+	.footer-bottom {
+		background-color: $color-1;
+		color: #fff;
+		@include responsiveText(14px, .04);
+		padding: 10px 0;
+		text-align: center;
+
+		a {
+			color: #fff;
+			font-family: $font-2;
+			@include responsiveText(16px, .06);
+			font-weight: normal;
+			letter-spacing: 2px;
+			text-decoration: none;
+			text-transform: uppercase;
+
+			@include hover {
+				text-decoration: underline;
+			}
+		}
+		span {
+			color: #fff;
+			font-family: $font-2;
+			@include responsiveText(16px, .06);
+			font-weight: normal;
+			letter-spacing: 2px;
+			text-transform: uppercase;
+		}
+	}
+}

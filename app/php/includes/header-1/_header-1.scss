@@ -1,0 +1,238 @@
+header.header-1 {
+	background-color: #fff;
+	padding-top: 20px;
+	position: relative;
+	z-index: 100;
+
+	&.sticky {
+		@include position(absolute, 0, none, none, 0);
+		width: 100%;
+	}
+
+	@include medium {
+		&.sticky {
+			@include position(fixed, 0, none, none, 0);
+			@include transition;
+			width: 100%;
+
+			&.scroll {
+				@include box-shadow(0 4px 8px 0 rgba(#000, .1));
+
+				#searchbar {
+					@include box-shadow(0 4px 8px 0 rgba(#000, .1));
+				}
+			}
+		}
+	}
+
+	.logo {
+		padding: 0 20px 20px 0;
+
+		a {
+			@include transition;
+
+			@include hover {
+				@include opacity(.7);
+			}
+		}
+		img {
+			width: 240px;
+		}
+	}
+
+	.menu {
+		@include flex-grow(1);
+		position: relative;
+		z-index: 20;
+	}
+
+	#main-menu {
+		> ul {
+			@include flex(row, nowrap, flex-end);
+
+			> li {
+				@include display-flex;
+				position: relative;
+
+				@include hover {
+					> a {
+						color: $grey-2;
+					}
+
+					> ul {
+						display: block;
+						visibility: visible;
+						@include transform(scaleY(1));
+					}
+				}
+				&.active {
+					> a {
+						color: $color-1;
+					}
+				}
+
+				> a {
+					color: $color-2;
+					@include align-items(center);
+					@include display-flex;
+					font-family: $font-2;
+					font-weight: 700;
+					line-height: 100%;
+					position: relative;
+					@include responsiveText(16px, .06);
+					text-decoration: none;
+					text-transform: uppercase;
+					white-space: nowrap;
+				}
+
+				> ul {
+					background-color: #fff;
+					@include box-shadow(0 4px 8px 0 rgba(#000, .2));
+					left: 0;
+					min-width: 100%;
+					padding: 10px 0;
+					position: absolute;
+					top: 100%;
+					transform-origin: 50% 0%;
+					@include transform(scaleY(0));
+					@include transition(all, ease, 300ms);
+					visibility: hidden;
+					white-space: nowrap;
+
+					> li {
+						display: block;
+						position: relative;
+
+						@include hover {
+							> a {
+								color: $grey-2;
+							}
+							> ul {
+								display: block;
+								visibility: visible;
+								@include transform(scaleX(1));
+							}
+						}
+						&.active {
+							> a {
+								color: $color-1;
+							}
+						}
+
+						> a {
+							color: $grey-3;
+							display: block;
+							font-family: $font-1;
+							font-size: 15px;
+							font-weight: 500;
+							padding: 6px 20px;
+							text-decoration: none;
+						}
+
+						> ul {
+							background-color: #fff;
+							@include box-shadow(0 4px 8px 0 rgba(#000, .2));
+							min-width: 100%;
+							padding: 10px;
+							@include position(absolute, 0, none, none, 100%);
+							transform-origin: 0% 0%;
+							@include transform(scaleX(0));
+							@include transition(all, ease, 300ms);
+							visibility: hidden;
+							white-space: nowrap;
+
+							> li {
+								display: block;
+								position: relative;
+
+								@include hover {
+									> a {
+										color: $grey-2;
+									}
+
+									> ul {
+										display: block;
+										visibility: visible;
+										@include transform(scaleX(1));
+									}
+								}
+								&.active {
+									> a {
+										color: $color-1;
+									}
+								}
+								> a {
+									color: $grey-3;
+									display: block;
+									font-family: $font-1;
+									font-size: 15px;
+									font-weight: 500;
+									padding: 6px 20px;
+									text-decoration: none;
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+
+		@include medium {
+			> ul {
+				margin-right: -15px;
+
+				> li {
+					> a {
+						padding: 20px 15px;
+					}
+				}
+			}
+		}
+		@include large {
+			> ul {
+				margin-right: -20px;
+
+				> li {
+					> a {
+						padding: 20px 20px;
+					}
+				}
+			}
+		}
+		@include extralarge {
+			> ul {
+				margin-right: -28px;
+
+				> li {
+					> a {
+						padding: 20px 28px;
+					}
+				}
+			}
+		}
+	}
+
+	.mobile-menu {
+		padding: 0 0 20px;
+	}
+
+	#mobile-menu-trigger {
+		@include align-items(center);
+		background-color: $color-1;
+		height: 44px;
+		@include justify-content(center);
+		width: 44px;
+
+		span {
+			background-color: #fff;
+			display: block;
+			height: 3px;
+			position: relative;
+			width: 30px;
+
+			&:nth-child(2) {
+				margin: 6px 0;
+			}
+		}
+	}
+}
