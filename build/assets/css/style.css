@@ -1776,10 +1776,19 @@ label:focus {
     margin: 2px 6px;
     vertical-align: top; }
 
+.content .button button,
 .content .button a,
+.button button,
 .button a {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  -o-appearance: none;
+  appearance: none;
   background-color: #ff0000;
+  border: 0;
   color: #fff;
+  cursor: pointer;
   display: inline-block;
   font-family: "Open Sans", sans-serif;
   font-size: 13.2377px;
@@ -1791,21 +1800,50 @@ label:focus {
   transition: all ease 250ms;
   -webkit-transition: all ease 250ms; }
   @media only screen and (min-width: 786px) {
+    .content .button button,
     .content .button a,
+    .button button,
     .button a {
       font-size: 14.3888px; } }
   @media only screen and (min-width: 992px) {
+    .content .button button,
     .content .button a,
+    .button button,
     .button a {
       font-size: 15.64px; } }
   @media only screen and (min-width: 1320px) {
+    .content .button button,
     .content .button a,
+    .button button,
     .button a {
       font-size: 17px; } }
   @media only screen and (min-width: 786px) {
+    .content .button button:hover,
     .content .button a:hover,
+    .button button:hover,
     .button a:hover {
       background-color: #b30000; } }
+  .content .button button [class*=icon-],
+  .content .button a [class*=icon-],
+  .button button [class*=icon-],
+  .button a [class*=icon-] {
+    display: inline-block;
+    margin-left: 12px;
+    vertical-align: middle;
+    height: 30px;
+    margin-top: -5px;
+    line-height: 30px;
+    font-size: 30px;
+    width: 30px; }
+    .content .button button [class*=icon-]:before,
+    .content .button a [class*=icon-]:before,
+    .button button [class*=icon-]:before,
+    .button a [class*=icon-]:before {
+      display: block;
+      height: 30px;
+      line-height: 30px;
+      font-size: 30px;
+      width: 30px; }
 
 .content .button.small a,
 .button.small a {
@@ -1937,6 +1975,8 @@ label:focus {
     .card .card-inner .card-content {
       width: 100%; }
     .card .card-inner .card-button {
+      padding: 10px 30px 30px;
+      text-align: center;
       width: 100%; }
 
 /* FORMS -------------------------------------- */

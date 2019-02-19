@@ -20,6 +20,11 @@
 						<div class="card-header">
 							<span>Lorem ipsum dolor sit amet</span>
 						</div>
+						<div class="card-button">
+							<div class="button">
+								<button href="#">Download <span class="icon-cloud-download"></span></button>
+							</div>
+						</div>
 					</a>
 				</div>
 				<div class="col-xs-12 col-md-6 col-lg-4 card" data-transition="zoom-in" data-delay="200">
@@ -29,6 +34,11 @@
 						</div>
 						<div class="card-header">
 							<span>Lorem ipsum dolor sit amet</span>
+						</div>
+						<div class="card-button">
+							<div class="button">
+								<button href="#">Download <span class="icon-cloud-download"></span></button>
+							</div>
 						</div>
 					</a>
 				</div>
@@ -40,6 +50,11 @@
 						<div class="card-header">
 							<span>Lorem ipsum dolor sit amet</span>
 						</div>
+						<div class="card-button">
+							<div class="button">
+								<button href="#">Download <span class="icon-cloud-download"></span></button>
+							</div>
+						</div>
 					</a>
 				</div>
 				<div class="col-xs-12 col-md-6 col-lg-4 card" data-transition="zoom-in">
@@ -49,6 +64,11 @@
 						</div>
 						<div class="card-header">
 							<span>Lorem ipsum dolor sit amet</span>
+						</div>
+						<div class="card-button">
+							<div class="button">
+								<button href="#">Download <span class="icon-cloud-download"></span></button>
+							</div>
 						</div>
 					</a>
 				</div>
@@ -60,6 +80,11 @@
 						<div class="card-header">
 							<span>Lorem ipsum dolor sit amet</span>
 						</div>
+						<div class="card-button">
+							<div class="button">
+								<button href="#">Download <span class="icon-cloud-download"></span></button>
+							</div>
+						</div>
 					</a>
 				</div>
 				<div class="col-xs-12 col-md-6 col-lg-4 card" data-transition="zoom-in" data-delay="400">
@@ -69,6 +94,11 @@
 						</div>
 						<div class="card-header">
 							<span>Lorem ipsum dolor sit amet</span>
+						</div>
+						<div class="card-button">
+							<div class="button">
+								<button href="#">Download <span class="icon-cloud-download"></span></button>
+							</div>
 						</div>
 					</a>
 				</div>
@@ -80,6 +110,11 @@
 						<div class="card-header">
 							<span>Lorem ipsum dolor sit amet</span>
 						</div>
+						<div class="card-button">
+							<div class="button">
+								<button href="#">Download <span class="icon-cloud-download"></span></button>
+							</div>
+						</div>
 					</a>
 				</div>
 				<div class="col-xs-12 col-md-6 col-lg-4 card" data-transition="zoom-in" data-delay="200">
@@ -89,6 +124,11 @@
 						</div>
 						<div class="card-header">
 							<span>Lorem ipsum dolor sit amet</span>
+						</div>
+						<div class="card-button">
+							<div class="button">
+								<button href="#">Download <span class="icon-cloud-download"></span></button>
+							</div>
 						</div>
 					</a>
 				</div>
@@ -100,6 +140,11 @@
 						<div class="card-header">
 							<span>Lorem ipsum dolor sit amet</span>
 						</div>
+						<div class="card-button">
+							<div class="button">
+								<button href="#">Download <span class="icon-cloud-download"></span></button>
+							</div>
+						</div>
 					</a>
 				</div>
 				<div class="col-xs-12 col-md-6 col-lg-4 card" data-transition="zoom-in">
@@ -109,6 +154,11 @@
 						</div>
 						<div class="card-header">
 							<span>Lorem ipsum dolor sit amet</span>
+						</div>
+						<div class="card-button">
+							<div class="button">
+								<button href="#">Download <span class="icon-cloud-download"></span></button>
+							</div>
 						</div>
 					</a>
 				</div>
@@ -120,6 +170,11 @@
 						<div class="card-header">
 							<span>Lorem ipsum dolor sit amet</span>
 						</div>
+						<div class="card-button">
+							<div class="button">
+								<button href="#">Download <span class="icon-cloud-download"></span></button>
+							</div>
+						</div>
 					</a>
 				</div>
 				<div class="col-xs-12 col-md-6 col-lg-4 card" data-transition="zoom-in" data-delay="400">
@@ -129,6 +184,11 @@
 						</div>
 						<div class="card-header">
 							<span>Lorem ipsum dolor sit amet</span>
+						</div>
+						<div class="card-button">
+							<div class="button">
+								<button href="#">Download <span class="icon-cloud-download"></span></button>
+							</div>
 						</div>
 					</a>
 				</div>

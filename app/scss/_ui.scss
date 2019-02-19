@@ -12,9 +12,13 @@
 }
 .content .button,
 .button {
+	button,
 	a {
+		@include appearance;
 		background-color: $color-1;
+		border: 0;
 		color: #fff;
+		cursor: pointer;
 		display: inline-block;
 		font-family: $font-1;
 		@include responsiveText(17px, .08);
@@ -27,6 +31,25 @@
 
 		@include hover {
 			background-color: darken($color-1, 15%);
+		}
+
+		[class*=icon-] {
+			display: inline-block;
+			margin-left: 12px;
+			vertical-align: middle;
+			height: 30px;
+			margin-top: -5px;
+			line-height: 30px;
+			font-size: 30px;
+			width: 30px;
+
+			&:before {
+				display: block;
+				height: 30px;
+				line-height: 30px;
+				font-size: 30px;
+				width: 30px;
+			}
 		}
 	}
 
@@ -124,6 +147,8 @@
 		}
 
 		.card-button {
+			padding: 10px 30px 30px;
+			text-align: center;
 			width: 100%;
 		}
 	}
