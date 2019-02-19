@@ -2,10 +2,10 @@
 	<div class="container">
 		<div class="row">
 			<div class="col-xs-12 section-header">
-				<h1><content name="template.diensten-titel">Producten</content></h1>
+				<h1><content name="template.diensten-titel">Downloads</content></h1>
 				<div class="content">
 					<content name="template.diensten-tekst">
-						Onderstaand ziet u een overzicht van onze producten.
+						Onderstaand ziet u een overzicht van onze downloads.
 					</content>
 				</div>
 			</div>

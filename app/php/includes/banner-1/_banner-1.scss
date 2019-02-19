@@ -1,4 +1,7 @@
 section.banner-1 {
+	background-color: $color-1;
+	padding: 0;
+
 	.container:first-child {
 		z-index: 20;
 
@@ -7,18 +10,28 @@ section.banner-1 {
 		}
 	}
 	.container:last-child {
-		left: 0;
-		position: absolute;
-		top: 0;
-		height: 100%;
-		z-index: 10;
-
-		.row {
+		@include medium {
+			left: 0;
+			position: absolute;
+			top: 0;
 			height: 100%;
+			z-index: 10;
+
+			.row {
+				height: 100%;
+			}
 		}
 	}
 	.background {
-		background-color: #000;
+		background-color: $color-1;
+	}
+	.image {
+		@include background('', cover, center, no-repeat);
+		padding: 60% 0 0 0;
+
+		@include medium {
+			padding: 0;
+		}
 	}
 	.box {
 		padding-right: $gutter;
@@ -30,6 +43,7 @@ section.banner-1 {
 			font-weight: normal;
 			letter-spacing: 4px;
 			line-height: 105%;
+			margin-bottom: $text-margin;
 			@include responsiveText(40px, .14);
 		}
 

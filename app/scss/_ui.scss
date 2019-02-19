@@ -45,6 +45,17 @@
 			}
 		}
 	}
+
+	&.negative {
+		a {
+			background-color: #fff;
+			color: $color-1;
+
+			@include hover {
+				background-color: darken(#fff, 15%);
+			}
+		}
+	}
 }
 
 /* CARDS -------------------------------------- */
@@ -80,7 +91,7 @@
 
 			span {
 				color: #000;
-				font-family: $font-2;
+				font-family: $font-1;
 				@include responsiveText(17px, .08);
 				font-weight: 600;
 				line-height: 140%;

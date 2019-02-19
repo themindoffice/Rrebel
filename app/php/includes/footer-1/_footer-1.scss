@@ -11,11 +11,9 @@ footer.footer-1 {
 			color: $color-1;
 			display: block;
 			font-family: $font-2;
-			@include responsiveText(24px, .1);
-			font-weight: normal;
-			letter-spacing: 4px;
+			@include responsiveText(30px, .1);
+			font-weight: 400;
 			line-height:110%;
-			text-transform: uppercase;
 		}
 		hr {
 			border: 0;
@@ -79,7 +77,6 @@ footer.footer-1 {
 
 		a {
 			color: #fff;
-			font-family: $font-2;
 			@include responsiveText(16px, .06);
 			font-weight: normal;
 			letter-spacing: 2px;
@@ -92,7 +89,6 @@ footer.footer-1 {
 		}
 		span {
 			color: #fff;
-			font-family: $font-2;
 			@include responsiveText(16px, .06);
 			font-weight: normal;
 			letter-spacing: 2px;

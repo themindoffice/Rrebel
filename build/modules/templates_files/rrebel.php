@@ -7,25 +7,11 @@
 			<div class="container">
 				<div class="row">
 					<div class="col-xs-12 section-header">
-						<h3>{{page.intro-titel}}</h3>
-						<hr>
+						<h1>{{page.intro-titel}}</h1>
 					</div>
 				</div>
 				<div class="row">
 					<div class="col-xs-12 content">{{page.intro-tekst[textarea]}}</div>
-				</div>
-			</div>
-		</section>
-		<section>
-			<div class="container">
-				<div class="row">
-					<div class="col-xs-12 section-header alt">
-						<h3>{{page.titel}}</h3>
-						<hr>
-					</div>
-				</div>
-				<div class="row">
-					<div class="col-xs-12 content">{{page.tekst[textarea]}}</div>
 				</div>
 			</div>
 		</section>

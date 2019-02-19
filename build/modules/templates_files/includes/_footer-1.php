@@ -3,8 +3,8 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-md-6 col-lg-4">
-					<p class="title">{{template.footer-titel-1}}</p>
-					<p class="footer-logo"><a href="/<?php echo pages_url('pages',143)?>"><img src="/assets/img/logo.png"></a></p>{{template.footer-tekst-1[textarea]}}</div>
+					<p class="footer-logo"><a href="index.html"><img src="/assets/img/logo.png"></a></p>
+				</div>
 				<div class="col-md-6 col-lg-4">
 					<p class="title">{{template.footer-titel-2}}</p>@views_diensten_footer@</div>
 				<div class="col-md-6 col-lg-4">

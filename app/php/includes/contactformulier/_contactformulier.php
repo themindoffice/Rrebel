@@ -4,16 +4,15 @@
 			<div class="col-xs-12 col-lg-6 content">
 				<content name="template.contact-form-tekst[textarea]">
 					<h3>Adres</h3>
-					Koningin Wilhelminahaven NZ 2h<br>
-					3134 KE Vlaardingen<br>
-					(4de verdieping)
+					Straatnaam 12<br>
+					3100 XX Stad
 					<br><br>
 					<h3>Contactgegevens</h3>
-					T: +31(0)10 - 435 07 50<br>
-					E: <a href="mailto:info@themindoffice.nl">info@themindoffice.nl</a>
+					T: 010 1234567<br>
+					E: <a href="mailto:info@themindoffice.nl">info@rrebel.nl</a>
 					<br><br>
 					<h3>Bedrijfsgegevens</h3>
-					KVK: 50842749<br>
+					KVK: 1234567<br>
 					BTW: NL12.75.34.842.B01
 				</content>
 			</div>

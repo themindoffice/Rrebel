@@ -1,15 +1,12 @@
 section.hero-2 {
-	@include clip-path(polygon(0 40px, 65px 0, 100% 0, 100% 100%, 0 100%));
 	@include flex(row, nowrap, center, center);
 	height: 300px;
 	position: relative;
 	z-index: 20;
 
-	@include medium {
-		@include clip-path(polygon(0 80px, 130px 0, 100% 0, 100% 100%, 0 100%));
-	}
-
-	.parallax {
+	.image {
+		@include background('', cover, center, no-repeat);
+		@include position;
 		z-index: 10;
 
 		&:before {
@@ -17,22 +14,6 @@ section.hero-2 {
 			content: '';
 			@include position(absolute, 0, 0, 0, 0);
 			z-index: 10;
-		}
-	}
-
-	.watermark {
-		@include background('../img/bg/rooftop.svg', cover, center, no-repeat);
-		bottom: -5px;
-		right: -5px;
-		position: absolute;
-		width: 400px;
-		z-index: 30;
-
-		&:before {
-			content: '';
-			display: block;
-			padding-top: 31.13839285714286%;
-			position: relative;
 		}
 	}
 

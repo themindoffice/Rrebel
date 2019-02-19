@@ -6,7 +6,7 @@
 		<section class="intro">
 			<div class="container">
 				<div class="row">
-					<div class="col-xs-12 section-header">
+					<div class="col-xs-12 section-header alt">
 						<h1>{{page.intro-titel}}</h1>
 					</div>
 				</div>

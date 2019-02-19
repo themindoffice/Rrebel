@@ -3,37 +3,28 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-md-6 col-lg-4">
-					<p class="title"><content name="template.footer-titel-1">Over ons</content></p>
-					<p class="footer-logo"><a href="/<?php echo pages_url('pages',143)?>"><img src="assets/img/logo.png"></a></p>
-					<content name="template.footer-tekst-1[textarea]">
-						<ul>
-							<li><a href="#">Voorwaarden</a></li>
-							<li><a href="#">Privacy</a></li>
-						</ul>
-					</content>
+					<p class="footer-logo"><a href="index.html"><img src="assets/img/logo.png"></a></p>
 				</div>
 				<div class="col-md-6 col-lg-4">
-					<p class="title"><content name="template.footer-titel-2">Diensten</content></p>
+					<p class="title"><content name="template.footer-titel-2">Producten</content></p>
 					<view name="diensten_footer">
 						<ul>
-							<li><a href="#">Advies</a></li>
-							<li><a href="#">Leveren van alle benodigde dakmaterialen</a></li>
-							<li><a href="#">Dakpannen leggen (keramisch,beton & leipannen)</a></li>
-							<li><a href="#">Traditioneel vorstenwerk (specie, Flexim)</a></li>
-							<li><a href="#">Bitumineuze dakbedekking</a></li>
-							<li><a href="#">Lood en zinkwerk</a></li>
+							<li><a href="#">Product 1</a></li>
+							<li><a href="#">Product 2</a></li>
+							<li><a href="#">Product 3</a></li>
+							<li><a href="#">Product 4</a></li>
+							<li><a href="#">Product 5</a></li>
 						</ul>
 					</view>
 				</div>
 				<div class="col-md-6 col-lg-4">
 					<p class="title"><content name="template.footer-titel-3">Adres</content></p>
 					<content name="template.footer-tekst-3[textarea]">
-						<p>Koningin Wilhelminahaven NZ 2h<br>
-						3134 KE Vlaardingen<br>
-						(4de verdieping)</p>
-						<p><strong>T:</strong> +31(0)10 - 435 07 50<br>
-						<strong>E:</strong> <a href="#">info@themindoffice.nl</a></p>
-						<p><strong>KVK:</strong> 50842749<br>
+						<p>Straatnaam 1<br>
+						3100 XX Stad</p>
+						<p><strong>T:</strong> 010 1234567<br>
+						<strong>E:</strong> <a href="#">info@rrebel.nl</a></p>
+						<p><strong>KVK:</strong> 1234567<br>
 						<strong>BTW:</strong> NL12.75.34.842.B01</p>
 					</content>
 				</div>

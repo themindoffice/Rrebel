@@ -11,8 +11,7 @@
 			<div class="container">
 				<div class="row">
 					<div class="col-xs-12 section-header alt">
-						<h3><content name="page.titel">Pagina titel</content></h3>
-						<hr>
+						<h1><content name="page.titel">Pagina titel</content></h1>
 					</div>
 				</div>
 				<div class="row">
@@ -24,7 +23,7 @@
 				</div>
 			</div>
 		</section>
-		@include('services/_services.php')
+		@include('products/_products.php')
 		@include('contactformulier/_contactformulier.php')
 	</main>
 	@include('footer-1/_footer-1.php')
