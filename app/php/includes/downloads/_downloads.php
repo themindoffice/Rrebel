@@ -3,11 +3,13 @@
 		<div class="row">
 			<div class="col-xs-12 section-header">
 				<h1><content name="page.pagina-titel">Downloads</content></h1>
-				<div class="content">
-					<content name="page.pagina-tekst">
-						Onderstaand ziet u een overzicht van onze downloads.
-					</content>
-				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-xs-12 content">
+				<content name="page.pagina-tekst[textarea]">
+					Onderstaand ziet u een overzicht van onze downloads.
+				</content>
 			</div>
 		</div>
 		<div class="row">

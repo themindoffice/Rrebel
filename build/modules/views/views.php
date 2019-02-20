@@ -1,7 +1,7 @@
 <?php
 
 function views_product_highlights() {
-	$table_name = db_pdo_select_all("SELECT * FROM product_highlights ORDER BY naam ASC LIMIT 3");
+	$table_name = db_pdo_select_all("SELECT * FROM producten ORDER BY volgorde ASC LIMIT 3");
 	$url 		= (isset($_SERVER['HTTPS']) ? "https" : "http") . "://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]";
 	$html 		= '';
 
@@ -11,13 +11,13 @@ function views_product_highlights() {
 			<div class="row va-xs-center ha-xs-right">
 				<div class="col-xs-12 col-md-8 col-lg-6 product-info ta-xs-center ta-md-right">
 					<h1>'.output($item["naam"]).'</h1>
-					<p>'.output($item["omschrijving"]).'</p>
+					<p>'.output($item["korte_tekst"]).'</p>
 					<p class="button">
 						<a href="'.pages_url('page_name',$item["id"]).'">Bekijk product</a>
 					</p>
 				</div>
 				<div class="col-xs-12 col-md-4 product-photo order-xs-first order-xs-first order-md-last">
-					<img src="'.fc_getSettings('cdn').'/slir/w800'.output($item["afbeelding"]).'">
+					<img src="'.fc_getSettings('cdn').'/slir/w800'.output($item["foto"]).'">
 				</div>
 			</div>
 		</div>';
@@ -27,7 +27,7 @@ function views_product_highlights() {
 }
 
 function views_producten() {
-	$table_name = db_pdo_select_all("SELECT * FROM producten ORDER BY naam ASC");
+	$table_name = db_pdo_select_all("SELECT * FROM producten ORDER BY volgorde ASC");
 	$url 		= (isset($_SERVER['HTTPS']) ? "https" : "http") . "://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]";
 	$html 		= '';
 
@@ -36,9 +36,9 @@ function views_producten() {
 		<div class="col-xs-12 col-md-6 col-lg-4 card">
 			<a href="'.pages_url('page_name',$item["id"]).'" class="card-inner">
 				<div class="card-image">
-					<span><img src="'.fc_getSettings('cdn').'/slir/w800'.output($item["afbeelding"]).'"></span>
+					<span><img src="'.fc_getSettings('cdn').'/slir/w800'.output($item["foto"]).'"></span>
 				</div>
-				<div class="card-header">
+				<div class="card-header ta-xs-center">
 					<span>'.output($item["naam"]).'</span>
 				</div>
 			</a>
@@ -49,7 +49,7 @@ function views_producten() {
 }
 
 function views_downloads() {
-	$table_name = db_pdo_select_all("SELECT * FROM downloads ORDER BY naam ASC");
+	$table_name = db_pdo_select_all("SELECT * FROM downloads ORDER BY volgorde ASC");
 	$url 		= (isset($_SERVER['HTTPS']) ? "https" : "http") . "://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]";
 	$html 		= '';
 
@@ -58,9 +58,9 @@ function views_downloads() {
 		<div class="col-xs-12 col-md-6 col-lg-4 card">
 			<div class="card-inner">
 				<div class="card-image">
-					<span><img src="'.fc_getSettings('cdn').'/slir/w800'.output($item["afbeelding"]).'"></span>
+					<span><img src="'.fc_getSettings('cdn').'/slir/w800'.output($item["foto"]).'"></span>
 				</div>
-				<div class="card-header">
+				<div class="card-header ta-xs-center">
 					<span>'.output($item["naam"]).'</span>
 				</div>
 				<div class="card-button">
@@ -76,7 +76,7 @@ function views_downloads() {
 }
 
 function views_vacatures() {
-	$table_name = db_pdo_select_all("SELECT * FROM vacatures ORDER BY naam ASC");
+	$table_name = db_pdo_select_all("SELECT * FROM vacatures ORDER BY volgorde ASC");
 	$url 		= (isset($_SERVER['HTTPS']) ? "https" : "http") . "://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]";
 	$html 		= '';
 

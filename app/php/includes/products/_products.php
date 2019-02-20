@@ -3,11 +3,13 @@
 		<div class="row">
 			<div class="col-xs-12 section-header">
 				<h1><content name="template.producten-titel">Products</content></h1>
-				<div class="content">
-					<content name="template.producten-tekst[textarea]">
-						Onderstaand ziet u een overzicht van onze producten.
-					</content>
-				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-xs-12 content">
+				<content name="template.producten-tekst[textarea]">
+					Onderstaand ziet u een overzicht van onze producten.
+				</content>
 			</div>
 		</div>
 		<div class="row">

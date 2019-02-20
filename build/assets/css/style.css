@@ -2228,8 +2228,8 @@ label:focus {
 .section-header h4,
 .section-header h5,
 .section-header h6 {
-  font-family: "rebelregular", sans-serif;
   color: #ff0000;
+  font-family: "rebelregular", sans-serif;
   font-weight: 400; }
 
 .section-header.alt h1,
@@ -2249,10 +2249,6 @@ label:focus {
   width: 100px;
   padding: 0; }
 
-.section-header h1:not(:last-child),
-.section-header h2:not(:last-child),
-.section-header h3:not(:last-child),
-.section-header h4:not(:last-child),
 .section-header p:not(:last-child),
 .section-header ul:not(:last-child),
 .section-header ol:not(:last-child),
@@ -2346,7 +2342,8 @@ label:focus {
 .content h6 {
   color: #ff0000;
   font-family: "Open Sans", sans-serif;
-  font-weight: 600; }
+  font-weight: 600;
+  margin-bottom: 20px; }
   .content h1:first-letter,
   .content h2:first-letter,
   .content h3:first-letter,
@@ -2421,12 +2418,6 @@ label:focus {
   width: 100px;
   padding: 0; }
 
-.content h1:not(:last-child),
-.content h2:not(:last-child),
-.content h3:not(:last-child),
-.content h4:not(:last-child),
-.content h5:not(:last-child),
-.content h6:not(:last-child),
 .content p:not(:last-child),
 .content ul:not(:last-child),
 .content ol:not(:last-child),
