@@ -2393,7 +2393,7 @@ label:focus {
   width: 100%; }
   .content table tr th,
   .content table tr td {
-    border-bottom: 1px solid #e6e6e6;
+    border-bottom: 1px solid #f2f2f2;
     padding: 4px 8px; }
     .content table tr th:first-child,
     .content table tr td:first-child {
@@ -2405,6 +2405,11 @@ label:focus {
     border-bottom: 1px solid #999999;
     font-weight: bold;
     font-size: 18px; }
+  .content table i {
+    color: #ff0000;
+    font-family: "rebelregular", sans-serif;
+    font-style: normal;
+    font-weight: 400; }
 
 .content hr {
   border: 0;

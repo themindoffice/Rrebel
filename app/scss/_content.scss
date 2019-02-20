@@ -154,7 +154,7 @@
 		tr {
 			th,
 			td {
-				border-bottom: 1px solid lighten($grey-2, 30%);
+				border-bottom: 1px solid lighten($grey-2, 35%);
 				padding: 4px 8px;
 
 				&:first-child {
@@ -169,6 +169,13 @@
 				font-weight: bold;
 				font-size: 18px;
 			}
+		}
+
+		i {
+			color: $color-1;
+			font-family: $font-2;
+			font-style: normal;
+			font-weight: 400;
 		}
 	}
 
