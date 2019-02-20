@@ -2,7 +2,7 @@
 <div id="page">
 	@include('header-1/_header-1.php')
 	@include('hero-2/_hero-2.php', {
-		"image": "files/banner-4.jpg",
+		"image": "files/hero-1.jpg",
 		"title": "Over ons",
 		"subtitle": "Onze missie en werkzaamheden"
 	})
@@ -26,7 +26,7 @@
 			</div>
 		</section>
 		@include('banner-1/_banner-1.php', {
-			"image": "files/banner-3.jpg",
+			"image": "files/banner-1.jpg",
 			"title": "Banner titel",
 			"subtitle": "Banner subtitel",
 			"text": "Morbi commodo nec risus eu mollis. Mauris blandit tincidunt aliquet. Cras metus ligula, eleifend sed nulla in, pretium rutrum tellus. Phasellus eu dolor non elit interdum ullamcorper vitae ac magna. Curabitur id commodo nisi. Fusce sagittis dignissim sapien non pretium. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Proin mollis quis erat eu consequat. Duis finibus quam urna, eu cursus urna consequat non. Nam maximus nunc vitae justo condimentum, sit amet tempor magna tristique. Pellentesque vitae ornare risus. Duis tristique dui lectus, eu efficitur orci interdum in. Pellentesque maximus, velit ac suscipit facilisis, massa orci bibendum lorem, quis bibendum ex orci a nunc."

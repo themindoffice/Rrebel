@@ -2,7 +2,7 @@
 <div id="page">
 	@include('header-1/_header-1.php')
 	@include('hero-2/_hero-2.php', {
-		"image": "files/banner-4.jpg",
+		"image": "files/hero-1.jpg",
 		"title": "Contact",
 		"subtitle": "Bereikbaar en betrouwbaar"
 	})
