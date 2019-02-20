@@ -24,7 +24,6 @@
 			</div>
 		</section>
 		@include('products/_products.php')
-		@include('contactformulier/_contactformulier.php')
 	</main>
 	@include('footer-1/_footer-1.php')
 </div>

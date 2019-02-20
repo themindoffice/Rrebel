@@ -22,7 +22,6 @@
 			</div>
 		</section>
 		<?php include("includes/_products.php") ?>
-		<?php include("includes/_contactformulier.php") ?>
 	</main>
 	<?php include("includes/_footer-1.php") ?>
 </div>

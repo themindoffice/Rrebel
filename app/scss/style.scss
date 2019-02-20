@@ -40,3 +40,7 @@ main {
 	@include transition(transform, ease, 300ms);
 	z-index: 20;
 }
+
+.is-grey {
+	background-color: $grey-1;
+}

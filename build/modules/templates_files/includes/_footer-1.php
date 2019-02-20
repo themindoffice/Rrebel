@@ -1,21 +1,17 @@
-<footer class="footer-1">
-	<section class="footer-main">
-		<div class="container">
-			<div class="row">
-				<div class="col-md-6 col-lg-4">
-					<p class="footer-logo"><a href="index.html"><img src="/assets/img/logo.png"></a></p>
-				</div>
-				<div class="col-md-6 col-lg-4">
-					<p class="title">{{template.footer-titel-2}}</p>@views_diensten_footer@</div>
-				<div class="col-md-6 col-lg-4">
-					<p class="title">{{template.footer-titel-3}}</p>{{template.footer-tekst-3[textarea]}}</div>
-			</div>
+<section class="fluid-split">
+	<div class="container">
+		<div class="row va-xs-center">
+			<div class="col-xs-12 col-md-4"> <img src="files/Glaasje Fini.png"></div>
+			<div class="col-xs-12 col-md-8 content">
+				<h1>{{page.fini-titel}}</h1>{{page.fini-tekst[textarea]}}</div>
 		</div>
-	</section>
+	</div>
+</section>
+<footer class="footer-1">
 	<section class="footer-bottom">
 		<div class="container">
 			<div class="row">
-				<div class="col-xs-12">{{template.footer-bottom[textarea]}}</div>
+				<div class="col-xs-12">{{template.footer-tekst[textarea]}}</div>
 			</div>
 		</div>
 	</section>

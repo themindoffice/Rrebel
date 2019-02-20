@@ -1,41 +1,24 @@
-<footer class="footer-1">
-	<section class="footer-main">
-		<div class="container">
-			<div class="row">
-				<div class="col-md-6 col-lg-4">
-					<p class="footer-logo"><a href="index.html"><img src="assets/img/logo.png"></a></p>
-				</div>
-				<div class="col-md-6 col-lg-4">
-					<p class="title"><content name="template.footer-titel-2">Producten</content></p>
-					<view name="diensten_footer">
-						<ul>
-							<li><a href="#">Product 1</a></li>
-							<li><a href="#">Product 2</a></li>
-							<li><a href="#">Product 3</a></li>
-							<li><a href="#">Product 4</a></li>
-							<li><a href="#">Product 5</a></li>
-						</ul>
-					</view>
-				</div>
-				<div class="col-md-6 col-lg-4">
-					<p class="title"><content name="template.footer-titel-3">Adres</content></p>
-					<content name="template.footer-tekst-3[textarea]">
-						<p>Straatnaam 1<br>
-						3100 XX Stad</p>
-						<p><strong>T:</strong> 010 1234567<br>
-						<strong>E:</strong> <a href="#">info@rrebel.nl</a></p>
-						<p><strong>KVK:</strong> 1234567<br>
-						<strong>BTW:</strong> NL12.75.34.842.B01</p>
-					</content>
-				</div>
+<section class="fluid-split">
+	<div class="container">
+		<div class="row va-xs-center">
+			<div class="col-xs-12 col-md-4">
+				<img src="files/Glaasje Fini.png">
+			</div>
+			<div class="col-xs-12 col-md-8 content">
+				<h1><content name="page.fini-titel">Dolor sit amet</content></h1>
+				<content name="page.fini-tekst[textarea]">
+					<p>Etiam porttitor, risus vel sodales sollicitudin, velit felis lacinia lorem, eget tincidunt elit felis vitae nunc. Nullam venenatis, leo id eleifend consectetur, eros lorem placerat quam, nec condimentum odio tellus vel eros. Quisque ac justo vulputate, ullamcorper lectus ac, finibus justo. Fusce venenatis ligula eu dolor pulvinar varius. Nunc sagittis dictum purus, et tempor nibh sodales id. Suspendisse malesuada, metus ac semper placerat, sapien ligula volutpat felis, quis consectetur elit est dignissim magna. Nunc ac feugiat mauris. In lobortis hendrerit massa, placerat pellentesque elit facilisis sit amet.</p>
+				</content>
 			</div>
 		</div>
-	</section>
+	</div>
+</section>
+<footer class="footer-1">
 	<section class="footer-bottom">
 		<div class="container">
 			<div class="row">
 				<div class="col-xs-12">
-					<content name="template.footer-bottom[textarea]"><p>2017 | <span>Website naam</span> | Realisatie door: <a href="https://themindoffice.nl/" target="_blank">The MindOffice</a></p></content>
+					<content name="template.footer-tekst[textarea]"><p>© 2017&nbsp;&nbsp;|&nbsp;&nbsp;<span>Rrebel</span></p></content>
 				</div>
 			</div>
 		</div>

@@ -1,6 +1,7 @@
 section.hero-1 {
 	@include flex(row, nowrap, center, center);
 	height: 690px;
+	overflow: hidden;
 	position: relative;
 	z-index: 20;
 
@@ -17,7 +18,7 @@ section.hero-1 {
 		left: 16px;
 		width: 80px;
 		position: absolute;
-		z-index: 20;
+		z-index: 40;
 	}
 	&:after {
 		border-bottom: 5px dashed #fff;
@@ -26,24 +27,31 @@ section.hero-1 {
 		left: 110px;
 		width: 45px;
 		position: absolute;
-		z-index: 20;
+		z-index: 40;
 	}
 
-	.image {
-		@include background('', cover, center, no-repeat);
-		@include position;
-		z-index: 10;
+	.owl-parallax {
+		bottom: 0;
+		left: 0;
+		position:absolute;
+		@include transition(transform, ease, 1s);
 
-		&:before {
-			background-color: rgba(#000, 0.85);
-			content: '';
-			@include position(absolute, 0, 0, 0, 0);
+		&.background {
+			@include background('', cover, center, no-repeat);
+			top: 0;
+			width: 125%;
 			z-index: 10;
+		}
+		&.foreground {
+			@include background('', cover, center top, no-repeat);
+			top: 80%;
+			width: 175%;
+			z-index: 20;
 		}
 	}
 
 	.owl-carousel {
-		z-index: 20;
+		z-index: 30;
 
 		.owl-nav {
 			@include flex(row, wrap, center, center);
@@ -66,6 +74,10 @@ section.hero-1 {
 					font-size: 38px;
 					line-height: 38px;
 				}
+
+				&.disabled {
+					@include opacity(.2);
+				}
 			}
 			.owl-next {
 				right: 10px;
@@ -77,6 +89,10 @@ section.hero-1 {
 					font-size: 38px;
 					line-height: 38px;
 				}
+
+				&.disabled {
+					@include opacity(.2);
+				}
 			}
 		}
 	}
@@ -86,11 +102,15 @@ section.hero-1 {
 			color: #fff;
 
 			h1 {
-				font-family: $font-2;
+				font-family: $font-1;
 				line-height:105%;
 				@include responsiveText(40px, .15);
-				font-weight: 400;
+				font-weight: 600;
 				margin-bottom: 35px;
+
+				&:first-letter {
+					font-family: $font-2;
+				}
 			}
 			p {
 				font-size: 15px;

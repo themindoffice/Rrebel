@@ -1,5 +1,12 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i');
-@import url('https://fonts.googleapis.com/css?family=Courgette');
+
+@font-face {
+    font-family: 'rebelregular';
+    src: url('../fonts/rebel-webfont.woff2') format('woff2'),
+         url('../fonts/rebel-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
 
 @font-face {
   font-family: "icons";

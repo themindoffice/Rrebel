@@ -8,7 +8,6 @@
 	})
 	<main>
 		@include('downloads/_downloads.php')
-		@include('contactformulier/_contactformulier.php')
 	</main>
 	@include('footer-1/_footer-1.php')
 </div>

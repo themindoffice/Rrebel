@@ -6,16 +6,20 @@
 		<section class="intro">
 			<div class="container">
 				<div class="row">
-					<div class="col-xs-12 section-header alt">
-						<h1>{{page.intro-titel}}</h1>
+					<div class="col-xs-12 section-header">
+						<h1>{{page.pagina-titel}}</h1>
 					</div>
 				</div>
 				<div class="row">
-					<div class="col-xs-12 content">{{page.intro-tekst[textarea]}}</div>
+					<div class="col-xs-12 content">{{page.pagina-tekst[textarea]}}</div>
+				</div>
+				<div class="row ha-xs-center">
+					<div class="col-xs-12 content">
+						<div id="accordion-2" class="accordion">@views_vacatures@</div>
+					</div>
 				</div>
 			</div>
 		</section>
-		<?php include("includes/_contactformulier.php") ?>
 	</main>
 	<?php include("includes/_footer-1.php") ?>
 </div>

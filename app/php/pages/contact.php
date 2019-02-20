@@ -11,19 +11,40 @@
 			<div class="container">
 				<div class="row">
 					<div class="col-xs-12 section-header">
-						<h1><content name="page.intro-titel">Neem contact met ons op</content></h1>
+						<h1><content name="page.pagina-titel">Kom in contact met je Rrebel</content></h1>
 					</div>
 				</div>
 				<div class="row">
 					<div class="col-xs-12 content">
-						<content name="page.intro-tekst[textarea]">
-							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nec pellentesque quam. Maecenas eu malesuada tortor. Fusce mollis finibus commodo. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Fusce fermentum nisi non porta ultricies. Cras quis velit quis sapien pulvinar cursus. Maecenas convallis mattis eros eget vulputate. Nunc dictum sodales tellus, et fermentum leo. Proin rhoncus eros non dolor dignissim, sed volutpat tortor maximus. Vivamus blandit, ipsum non tempus varius, nisi metus sodales eros, ultricies blandit magna lectus vitae mi.
+						<content name="page.pagina-tekst[textarea]">
+							<table>
+								<tr>
+									<td><b>Algemeen</b></td>
+									<td><a href="mailto:info@rrebel.eu">info@rrebel.eu</a></td>
+								</tr>
+								<tr>
+									<td><b>Sales Rrebel</b></td>
+									<td><a href="mailto:sales@rrebel.eu">sales@rrebel.eu</a></td>
+								</tr>
+								<tr>
+									<td><b>Marketing Rrebel</b></td>
+									<td><a href="mailto:marketing@rrebel.eu">marketing@rrebel.eu</a></td>
+								</tr>
+								<tr>
+									<td><b>Administratie Rrebel</b></td>
+									<td><a href="mailto:admin@rrebel.eu">admin@rrebel.eu</a></td>
+								</tr>
+								<tr>
+									<td><b>Directie Rrebel</b></td>
+									<td><a href="mailto:directie@rrebel.eu">directie@rrebel.eu</a></td>
+								</tr>
+							</table>
+							<p>of <a href="mailto:info@rrebelproductsgroup.com">info@rrebelproductsgroup.com</a></p>
 						</content>
 					</div>
 				</div>
 			</div>
 		</section>
-		@include('contactformulier/_contactformulier.php')
 	</main>
 	@include('footer-1/_footer-1.php')
 </div>

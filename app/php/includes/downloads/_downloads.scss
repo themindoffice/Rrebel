@@ -1,26 +1,19 @@
 section.services {
-	background-color: #000;
+	background-color: lighten($grey-2, 25%);
 
 	.content {
-		color: #fff;
+		color: #000;
 		margin-bottom: $text-margin;
 	}
 
 	.card {
-		a.card-inner {
+		.card-inner {
 			color: #000;
 			position: relative;
 			text-decoration: none;
 
 			&:before {
-				@include transition;
-			}
-
-			@include hover {
-				&:before {
-					left: 0;
-					right: 0;
-				}
+				display: none !important;
 			}
 		}
 	}

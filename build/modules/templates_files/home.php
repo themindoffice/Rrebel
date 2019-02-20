@@ -7,35 +7,24 @@
 			<div class="container">
 				<div class="row">
 					<div class="col-xs-12 section-header">
-						<h1>{{page.intro-titel}}</h1>
+						<h1>{{page.pagina-titel}}</h1>
 					</div>
 				</div>
 				<div class="row">
-					<div class="col-xs-12 col-md-6 content">{{page.intro-tekst-links[textarea]}}</div>
-					<div class="col-xs-12 col-md-6 content">{{page.intro-tekst-rechts[textarea]}}</div>
+					<div class="col-xs-12 col-md-6 content">{{page.pagina-tekst-links[textarea]}}</div>
+					<div class="col-xs-12 col-md-6 content">{{page.pagina-tekst-rechts[textarea]}}</div>
 				</div>
 			</div>
 		</section>
-		<section class="fluid-split">
+		<section class="fluid-split is-grey">
 			<div class="container">
 				<div class="row va-xs-center">
 					<div class="col-xs-12 col-md-6 content alt">
-						<h1>{{page.pannendaken-titel}}</h1>{{page.pannendaken-tekst[textarea]}}</div>
-					<div class="col-xs-12 col-md-6"> <img src="files/Justbe group.png"></div>
+						<h1>{{page.pagina-titel2}}</h1>{{page.pagina-tekst2[textarea]}}</div>
+					<div class="col-xs-12 col-md-6"> <img src="{{page.pagina-afbeelding[image]}}"></div>
 				</div>
 			</div>
 		</section>
-		<section class="fluid-split">
-			<div class="container">
-				<div class="row va-xs-center">
-					<div class="col-xs-12 col-md-4"> <img src="files/Glaasje Fini.png"></div>
-					<div class="col-xs-12 col-md-8 content">
-						<h1>{{page.renovatie-titel}}</h1>{{page.renovatie-tekst[textarea]}}</div>
-				</div>
-			</div>
-		</section>
-		<?php include("includes/_products.php") ?>
-		<?php include("includes/_contactformulier.php") ?>
 	</main>
 	<?php include("includes/_footer-1.php") ?>
 </div>

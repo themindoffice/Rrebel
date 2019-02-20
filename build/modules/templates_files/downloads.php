@@ -4,7 +4,6 @@
 	<?php include("includes/_hero-2.php") ?>
 	<main>
 		<?php include("includes/_downloads.php") ?>
-		<?php include("includes/_contactformulier.php") ?>
 	</main>
 	<?php include("includes/_footer-1.php") ?>
 </div>

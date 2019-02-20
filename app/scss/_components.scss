@@ -20,7 +20,6 @@
 
 		.accordion-handler {
 			background-color: $color-1;
-			@include border-radius($ui-radius);
 			color: #fff;
 			display: block;
 			font-family: $font-1;

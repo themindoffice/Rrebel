@@ -1,30 +1,24 @@
 .section-header {
 	h1 {
-		font-family: $font-2;
 		line-height:105%;
 		@include responsiveText(40px, .15);
 	}
 	h2 {
-		font-family: $font-2;
 		line-height:105%;
 		@include responsiveText(40px, .15);
 	}
 	h3 {
-		font-family: $font-2;
 		line-height:105%;
 		@include responsiveText(30px, .15);
 	}
 	h4 {
-		font-family: $font-2;
 		line-height:105%;
 		@include responsiveText(20px, .1);
 	}
 	h5 {
-		font-family: $font-2;
 		@include responsiveText(17px, .08);
 	}
 	h6 {
-		font-family: $font-2;
 		@include responsiveText(17px, .08);
 	}
 	h1,
@@ -33,6 +27,7 @@
 	h4,
 	h5,
 	h6 {
+		font-family: $font-2;
 		color: $color-1;
 		font-weight: 400;
 	}
@@ -74,32 +69,26 @@
 
 .content {
 	h1 {
-		font-family: $font-2;
 		line-height:105%;
 		@include responsiveText(35px, .15);
 	}
 	h2 {
-		font-family: $font-2;
 		line-height:105%;
 		@include responsiveText(30px, .15);
 	}
 	h3 {
-		font-family: $font-2;
 		line-height:105%;
 		@include responsiveText(25px, .1);
 	}
 	h4 {
-		font-family: $font-2;
 		line-height:105%;
 		@include responsiveText(20px, .1);
 	}
 	h5 {
-		font-family: $font-2;
 		line-height:105%;
 		@include responsiveText(18px, .08);
 	}
 	h6 {
-		font-family: $font-2;
 		line-height:105%;
 		@include responsiveText(17px, .08);
 	}
@@ -111,7 +100,12 @@
 	h5,
 	h6 {
 		color: $color-1;
-		font-weight: 400;
+		font-family: $font-1;
+		font-weight: 600;
+
+		&:first-letter {
+			font-family: $font-2;
+		}
 	}
 	&.alt {
 		h1,
@@ -155,9 +149,12 @@
 	}
 
 	table {
+		width: 100%;
+
 		tr {
 			th,
 			td {
+				border-bottom: 1px solid lighten($grey-2, 30%);
 				padding: 4px 8px;
 
 				&:first-child {

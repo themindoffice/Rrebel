@@ -7,15 +7,14 @@
 			<div class="container">
 				<div class="row">
 					<div class="col-xs-12 section-header">
-						<h1>{{page.intro-titel}}</h1>
+						<h1>{{page.pagina-titel}}</h1>
 					</div>
 				</div>
 				<div class="row">
-					<div class="col-xs-12 content">{{page.intro-tekst[textarea]}}</div>
+					<div class="col-xs-12 content">{{page.pagina-tekst[textarea]}}</div>
 				</div>
 			</div>
 		</section>
-		<?php include("includes/_contactformulier.php") ?>
 	</main>
 	<?php include("includes/_footer-1.php") ?>
 </div>
