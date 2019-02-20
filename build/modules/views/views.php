@@ -1,7 +1,7 @@
 <?php
 
 function views_product_highlights() {
-	$table_name = db_pdo_select_all("SELECT * FROM product_highlights ORDER BY naam ASC");
+	$table_name = db_pdo_select_all("SELECT * FROM product_highlights ORDER BY naam ASC LIMIT 3");
 	$url 		= (isset($_SERVER['HTTPS']) ? "https" : "http") . "://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]";
 	$html 		= '';
 
