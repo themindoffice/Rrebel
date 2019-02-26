@@ -6,6 +6,7 @@ function views_product_highlights() {
 	$html 		= '';
 
 	foreach($table_name as $item) {
+	
 		$html .= '
 		<div class="container product">
 			<div class="row va-xs-center ha-xs-right">
@@ -13,7 +14,7 @@ function views_product_highlights() {
 					<h1>'.output($item["naam"]).'</h1>
 					<p>'.output($item["korte_tekst"]).'</p>
 					<p class="button">
-						<a href="'.pages_url('page_name',$item["id"]).'">Bekijk product</a>
+						<a href="'.pages_url('producten',$item["id"]).'">Bekijk product</a>
 					</p>
 				</div>
 				<div class="col-xs-12 col-md-4 product-photo order-xs-first order-xs-first order-md-last">
@@ -32,9 +33,10 @@ function views_producten() {
 	$html 		= '';
 
 	foreach($table_name as $item) {
+		
 		$html .= '
-		<div class="col-xs-12 col-md-6 col-lg-4 card">
-			<a href="'.pages_url('page_name',$item["id"]).'" class="card-inner">
+		<div class="col-xs-12 col-md-6 col-lg-4 card" data-cat-id="'. $item["categorie"] .'">
+			<a href="'.pages_url('producten',$item["id"]).'" class="card-inner">
 				<div class="card-image">
 					<span><img src="'.fc_getSettings('cdn').'/slir/w800'.output($item["foto"]).'"></span>
 				</div>

@@ -4,6 +4,7 @@ $(document).ready(function()
 	new Accordion();
 
 	OwlParallax();
+	ProductFilters();
 });
 
 $(window).on('load', function(){
@@ -43,5 +44,36 @@ function OwlParallax() {
 		pullDrag: false,
 		autoplaySpeed: 1000,
 		navSpeed: 1000
+	});
+}
+
+function ProductFilters() {
+	var $filters 	= $(".product-filters a");
+	var $products 	= $(".products-row .card");
+
+	$filters.on("click touchstart", function(e) {
+		e.preventDefault();
+
+		var filterCatId = parseInt($(this).data("cat-id"));
+
+		if (filterCatId != 0) {
+			$filters.removeClass("active");
+			$(this).addClass("active");
+
+			$products.each(function() {
+				var productCatId = $(this).data("cat-id");
+
+				if (productCatId == filterCatId) {
+					$(this).removeClass("hide");
+				} else {
+					$(this).addClass("hide");
+				}
+			});
+		}
+		else {
+			$filters.removeClass("active");
+			$('.product-filters [data-cat-id="0"]').addClass("active");
+			$products.removeClass("hide");
+		}
 	});
 }

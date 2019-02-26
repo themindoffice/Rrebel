@@ -2,7 +2,7 @@
 <?php global $arginfo; ?>
 <div id="page">
 	<?php include("includes/_header-1.php") ?>
-	<?php include("includes/_hero-2.php") ?>
+	<?php include("includes/_hero-3.php") ?>
 	<main>
 		<section>
 			<div class="container">
@@ -17,7 +17,7 @@
 					<div class="col-xs-12 col-md-6 col-xl-7 content">
 						<?php echo output($arginfo["omschrijving"]); ?>
 					</div>
-					<div class="col-xs-12 col-md-6 col-xl-5 ta-xs-right"> <img src="<?php echo output($arginfo['foto']); ?>"></div>
+					<div class="col-xs-12 col-md-6 col-xl-5 ta-xs-center product-detail-image"> <img src="<?php echo output($arginfo['foto']); ?>"></div>
 				</div>
 			</div>
 		</section>

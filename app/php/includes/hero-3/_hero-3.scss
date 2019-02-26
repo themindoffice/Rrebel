@@ -1,0 +1,47 @@
+section.hero-3 {
+	@include flex(row, nowrap, center, center);
+	height: 300px;
+	position: relative;
+	z-index: 20;
+
+	.image {
+		@include background('', cover, center, no-repeat);
+		@include position;
+		z-index: 10;
+
+		&:before {
+			background-color: rgba(#000, 0.2);
+			content: '';
+			@include position(absolute, 0, 0, 0, 0);
+			z-index: 10;
+		}
+	}
+
+	.container {
+		@include flex-grow(1);
+		z-index: 20;
+
+		> div:last-child {
+			margin-bottom: 0;
+		}
+
+		.title {
+			color: #fff;
+			font-family: $font-2;
+			font-weight: normal;
+			letter-spacing: 8px;
+			line-height: 105%;
+			margin-bottom: 6px;
+			@include responsiveText(45px, .14);
+			text-transform: uppercase;
+		}
+
+		.subtitle {
+			color: #fff;
+			font-family: $font-1;
+			font-weight: normal;
+			line-height: 120%;
+			@include responsiveText(25px, .14);
+		}
+	}
+}

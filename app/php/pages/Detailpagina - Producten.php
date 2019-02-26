@@ -2,7 +2,7 @@
 <?php global $arginfo; ?>
 <div id="page">
 	@include('header-1/_header-1.php')
-	@include('hero-2/_hero-2.php', {
+	@include('hero-3/_hero-3.php', {
 		"image": "files/hero-1.jpg"
 	})
 	<main>
@@ -17,7 +17,7 @@
 					<div class="col-xs-12 col-md-6 col-xl-7 content">
 						<?php echo output($arginfo["omschrijving"]); ?>
 					</div>
-					<div class="col-xs-12 col-md-6 col-xl-5 ta-xs-right">
+					<div class="col-xs-12 col-md-6 col-xl-5 ta-xs-center product-detail-image">
 						<img src="<?php echo output($arginfo['foto']); ?>">
 					</div>
 				</div>
