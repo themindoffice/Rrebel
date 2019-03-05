@@ -39,12 +39,16 @@ section.banner-1 {
 
 		.title {
 			color: #fff;
-			font-family: $font-2;
+			font-family: $font-1;
 			font-weight: normal;
 			letter-spacing: 4px;
 			line-height: 105%;
 			margin-bottom: $text-margin;
 			@include responsiveText(40px, .14);
+
+			&:first-letter {
+				font-family: $font-2;
+			}
 		}
 
 		.subtitle {

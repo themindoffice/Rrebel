@@ -48,3 +48,17 @@ main {
 .hide {
 	display: none !important;
 }
+
+.no-vacancies {
+	font-weight: bold;
+	font-style: italic;
+}
+
+sup,
+sub {
+	color: $color-1;
+	font-family: $font-2;
+	@include responsiveText(19px, .08);
+	font-weight: 600px;
+	line-height: 150%;
+}

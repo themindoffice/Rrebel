@@ -82,16 +82,21 @@ function views_vacatures() {
 	$url 		= (isset($_SERVER['HTTPS']) ? "https" : "http") . "://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]";
 	$html 		= '';
 
-	foreach($table_name as $item) {
-		$html .= '
-		<div class="accordion-item">
-			<a class="accordion-handler" href="#">'.output($item["naam"]).' <span class="arrow"></span></a>
-			<div class="accordion-content">
-				<div class="accordion-content-inner">
-					'.output($item["omschrijving"]).'
+	if (is_array($table_name) && count($table_name) > 0){
+		foreach($table_name as $item) {
+			$html .= '
+			<div class="accordion-item">
+				<a class="accordion-handler" href="#">'.output($item["naam"]).' <span class="arrow"></span></a>
+				<div class="accordion-content">
+					<div class="accordion-content-inner">
+						'.output($item["omschrijving"]).'
+					</div>
 				</div>
-			</div>
-		</div>';
+			</div>';
+		}
+	}
+	else {
+		$html = '<div class="no-vacancies">Er zijn momenteel geen vacatures aanwezig</div>';
 	}
 
 	return $html;

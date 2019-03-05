@@ -25,6 +25,7 @@
 					<div class="col-xs-12 content">
 						<div id="accordion-2" class="accordion">
 							<view name="vacatures">
+								<div class="no-vacancies">Er zijn momenteel geen vacatures aanwezig</div>
 								<div class="accordion-item">
 									<a class="accordion-handler" href="#">Vacature 1 <span class="arrow"></span></a>
 									<div class="accordion-content">

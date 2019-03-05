@@ -3625,6 +3625,30 @@ main section {
 .hide {
   display: none !important; }
 
+.no-vacancies {
+  font-weight: bold;
+  font-style: italic; }
+
+sup,
+sub {
+  color: #ff0000;
+  font-family: "rebelregular", sans-serif;
+  font-size: 14.79507px;
+  font-weight: 600px;
+  line-height: 150%; }
+  @media only screen and (min-width: 786px) {
+    sup,
+    sub {
+      font-size: 16.0816px; } }
+  @media only screen and (min-width: 992px) {
+    sup,
+    sub {
+      font-size: 17.48px; } }
+  @media only screen and (min-width: 1320px) {
+    sup,
+    sub {
+      font-size: 19px; } }
+
 header.header-1 {
   background-color: #fff;
   padding-top: 20px;
@@ -4378,7 +4402,7 @@ section.banner-1 {
     width: 100%; }
     section.banner-1 .box .title {
       color: #fff;
-      font-family: "rebelregular", sans-serif;
+      font-family: "Open Sans", sans-serif;
       font-weight: normal;
       letter-spacing: 4px;
       line-height: 105%;
@@ -4393,6 +4417,8 @@ section.banner-1 {
       @media only screen and (min-width: 1320px) {
         section.banner-1 .box .title {
           font-size: 40px; } }
+      section.banner-1 .box .title:first-letter {
+        font-family: "rebelregular", sans-serif; }
     section.banner-1 .box .subtitle {
       color: #fff;
       font-family: "Open Sans", sans-serif;
