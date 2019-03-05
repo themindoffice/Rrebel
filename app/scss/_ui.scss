@@ -172,6 +172,8 @@
 	}
 
 	.form-row {
+		position: relative;
+
 		&:not(:last-child) {
 			margin-bottom: 10px;
 		}
@@ -235,13 +237,13 @@
 		background-color: #fff;
 		border: 2px solid $grey-2;
 		@include box-sizing;
-		color: $grey-2;
+		color: $grey-4;
 		font-family: $font-1;
-		font-weight: 400;
+		font-weight: 600;
 		height: 50px;
 		line-height: normal;
-		padding: 0 20px;
-		@include responsiveText(16px, .06);
+		padding: 0 36px 0 20px;
+		@include responsiveText(19px, .06);
 		width: 100%;
 
 		& + .icon {

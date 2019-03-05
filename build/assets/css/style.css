@@ -1993,21 +1993,22 @@ label:focus {
   .form .form-feedback.success {
     color: #20a623; }
 
-.form .form-row:not(:last-child) {
-  margin-bottom: 10px; }
-
-.form .form-row .form-field {
+.form .form-row {
   position: relative; }
-  .form .form-row .form-field.required:before {
-    color: #999999;
-    content: '*';
-    height: 12px;
-    line-height: 12px;
-    margin-top: -6px;
-    position: absolute;
-    top: 50%;
-    left: -20px;
-    vertical-align: middle; }
+  .form .form-row:not(:last-child) {
+    margin-bottom: 10px; }
+  .form .form-row .form-field {
+    position: relative; }
+    .form .form-row .form-field.required:before {
+      color: #999999;
+      content: '*';
+      height: 12px;
+      line-height: 12px;
+      margin-top: -6px;
+      position: absolute;
+      top: 50%;
+      left: -20px;
+      vertical-align: middle; }
 
 .form input[type=text],
 .form input[type=password],
@@ -2090,23 +2091,23 @@ label:focus {
   border: 2px solid #999999;
   box-sizing: border-box;
   -webkit-box-sizing: border-box;
-  color: #999999;
+  color: #242424;
   font-family: "Open Sans", sans-serif;
-  font-weight: 400;
+  font-weight: 600;
   height: 50px;
   line-height: normal;
-  padding: 0 20px;
-  font-size: 13.28934px;
+  padding: 0 36px 0 20px;
+  font-size: 15.7811px;
   width: 100%; }
   @media only screen and (min-width: 786px) {
     .form select {
-      font-size: 14.1376px; } }
+      font-size: 16.7884px; } }
   @media only screen and (min-width: 992px) {
     .form select {
-      font-size: 15.04px; } }
+      font-size: 17.86px; } }
   @media only screen and (min-width: 1320px) {
     .form select {
-      font-size: 16px; } }
+      font-size: 19px; } }
   .form select + .icon {
     border-top: 6px solid #000;
     border-left: 6px solid transparent;
@@ -3604,6 +3605,77 @@ body {
     html,
     body {
       font-size: 17px; } }
+
+body.agepage {
+  background-image: url("../img/agepage.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  -webkit-background-size: cover; }
+
+.agepage {
+  background-color: #f2f2f2;
+  height: 100%;
+  min-height: 100%; }
+  .agepage .holder {
+    align-content: stretch;
+    -webkit-align-content: stretch;
+    align-items: center;
+    -webkit-align-items: center;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    flex-wrap: nowrap;
+    -webkit-flex-wrap: nowrap;
+    flex-direction: row;
+    -webkit-flex-direction: row;
+    justify-content: center;
+    -webkit-justify-content: center;
+    height: 100%;
+    min-height: 100%;
+    padding: 20px; }
+    .agepage .holder .holder-inner {
+      background-color: #fff;
+      max-width: 100%;
+      padding: 40px;
+      width: 600px; }
+  .agepage .errormessage {
+    color: #f02a2a;
+    font-weight: bold;
+    font-style: italic;
+    margin-bottom: 30px; }
+  .agepage .age-logo {
+    margin-bottom: 30px; }
+  .agepage .form-row-split {
+    align-content: stretch;
+    -webkit-align-content: stretch;
+    align-items: stretch;
+    -webkit-align-items: stretch;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    flex-wrap: wrap;
+    -webkit-flex-wrap: wrap;
+    flex-direction: row;
+    -webkit-flex-direction: row;
+    justify-content: flex-start;
+    -webkit-justify-content: flex-start;
+    margin: -5px -5px 5px; }
+    .agepage .form-row-split .form-row {
+      padding: 5px;
+      margin: 0 !important;
+      width: 50%; }
+      .agepage .form-row-split .form-row.year {
+        width: 100%; }
+      @media only screen and (min-width: 786px) {
+        .agepage .form-row-split .form-row {
+          width: 33.3333333333333%; }
+          .agepage .form-row-split .form-row.year {
+            width: 33.3333333333333%; } }
 
 section {
   position: relative; }

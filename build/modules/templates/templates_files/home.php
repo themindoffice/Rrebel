@@ -19,7 +19,7 @@
 		<section class="fluid-split is-grey">
 			<div class="container">
 				<div class="row va-xs-center">
-					<div class="col-xs-12 col-md-6 content alt">
+					<div class="col-xs-12 col-md-6 content">
 						<h1>{{page.pagina-titel2}}</h1>{{page.pagina-tekst2[textarea]}}</div>
 					<div class="col-xs-12 col-md-6"> <img src="{{page.pagina-afbeelding[image]}}"></div>
 				</div>

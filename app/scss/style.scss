@@ -22,6 +22,66 @@ body {
 	line-height: 150%;
 	@include responsiveText(17px, .08);
 }
+body.agepage {
+	@include background('../img/agepage.jpg', cover, center, no-repeat);
+}
+.agepage {
+	background-color: $grey-1;
+	height: 100%;
+	min-height: 100%;
+
+	.holder {
+		@include flex(row, nowrap, center, center);
+		height: 100%;
+		min-height: 100%;
+		padding: 20px;
+
+		.holder-inner {
+			background-color: #fff;
+			max-width: 100%;
+			padding: 40px;
+			width: 600px;
+		}
+	}
+
+	.errormessage {
+		color: $color-error;
+		font-weight: bold;
+		font-style: italic;
+		margin-bottom: 30px;
+	}
+
+	.age-logo {
+		margin-bottom: 30px;
+
+		img {
+
+		}
+	}
+
+	.form-row-split {
+		@include flex(row, wrap);
+		margin: -5px -5px 5px;
+
+		.form-row {
+			padding: 5px;
+			margin: 0 !important;
+			width: 50%;
+
+			&.year {
+				width: 100%;
+			}
+
+			@include medium {
+				width: 33.3333333333333%;
+
+				&.year {
+					width: 33.3333333333333%;
+				}
+			}
+		}
+	}
+}
 
 section {
 	position: relative;
